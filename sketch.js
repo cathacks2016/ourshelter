@@ -44,10 +44,12 @@ function setup() {
         ]
         kitty = 0
         for (var i = 0; i < 10; i++){
+
             var flipper = random(0,10);
-            if (flipper >= 5 && i <16) {
+            if (flipper >= 5 && kitty <16) {
                 kitty += 17;
             }
+
             if (kitty <= 3) { // normal
                 xcorrection = .65;
                 ycorrection = .5;
@@ -73,14 +75,15 @@ function setup() {
                 ycorrection = 0;
                 speedcorrection = 0;
             }
+
             else if (kitty <= 20) { // normal reversed
                 xcorrection = .35;
                 ycorrection = .5;
                 speedcorrection = -1;
             }
             else if (kitty <= 24) { // scared reversed
-                xcorrection = .6;
-                ycorrection = .25;
+                xcorrection = .5;
+                ycorrection = .7;
                 speedcorrection = -1;
             }
             else if (kitty <= 28) { // fast reversed
@@ -93,7 +96,7 @@ function setup() {
                 ycorrection = .4;
                 speedcorrection = -1;
             }
-            else if (kitty <= 33) { // dead reversed
+            else { // dead reversed
                 xcorrection = 0;
                 ycorrection = 0;
                 speedcorrection = 0;
@@ -159,7 +162,7 @@ function setup() {
         this.display = function(){
             image(kittylist[kitty], this.x, this.y);
         };
-        this.mousetest = function() {
+                this.mousetest = function() {
             if (
                 mouseX <= this.x + xcorrection * kittylist[kitty].width + 50
                 && mouseX >= this.x + xcorrection * kittylist[kitty].width - 50
@@ -169,7 +172,7 @@ function setup() {
                 if (this.mouseflag <= 50) {
                     this.x -= this.speed;
                     for (var i = 0; i<100; i++) {
-                        this.y += random(-1, 1);
+                        this.y += random(-.5, .5);
                     }
                 this.mouseflag += 1
                 }
@@ -179,8 +182,9 @@ function setup() {
             }
             else {
                 this.mouseflag = 0;
-                // cursor(DEFAULT);
+                cursor(ARROW);
             }
+
         };
         this.updatecount = function() {
          document.getElementById('counter').innerHTML = happy_cat_count;
