@@ -147,10 +147,13 @@ function setup() {
                 this.x = 1.5 * screen.width;
             }
         };
-        this.movefast = function() {
-            this.x += this.speed*5;
+         this.move = function() {
+            this.x += this.speed;
             if (this.x >= screen.width) {
-                this.x = -screen.width/2;
+                this.x = -screen.width/3;
+            }
+            else if (this.x < -screen.width/2) {
+                this.x = screen.width;
             }
         };
         this.display = function(){
@@ -185,18 +188,8 @@ function setup() {
     }
 //background changes
     function CBI(){
-      // document.body.style.backgroundImage = "url(http://i.imgur.com/iqS4qZV.png)"
-      // nutBtn.disabled = true;
-      // unnutBtn.disabled = false;
       nut_btn_enabled = !(nut_btn_enabled);
     }
-    // function CBB(){
-    //   document.body.style.backgroundImage = "url(http://i.imgur.com/dBO8uMe.jpg?1)"
-    //   nut
-    //   nutBtn.disabled = false;
-    //   unnutBtn.disabled = true;
-    //   nut_btn_enabled = !(nut_btn_enabled);
-    // }
     function CBIW(){
       wut_btn_enabled = !(wut_btn_enabled);
     }
