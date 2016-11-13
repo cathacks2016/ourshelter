@@ -1,0 +1,43 @@
+  body{
+  font-family: Courier;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP4AAADHCAMAAAAOPR4GAAAAVFBMVEX/+p3/w+Hjtvv/4qev4v/G+Kb/4Kjitfys5P/y+Z/D+Kbms/ux4f/TxfzE9rH/xN//wOX/5KL/+J7P+KXH+aC16Ov/6qT/z8v/wuPwvO/PyPy26eVnYRcvAAABQElEQVR4nO3cx0EDQBAEwcULL4SH/PMkC/ZRXRFs/+4zN2e02T5gV/my8mXly8qXzZE217S5oJUvK19Wvqx8mf7qO9EmSZIkglfaXNHKl5UvK19WvmzeaPNLm0ta+bLyZeXLypfNgTY/tDmnlS8rX1a+rHzZ3NDmm6avOLcP2FW+rHxZ+TI9/4s2n7R5oekj1u0DdpUvK19WvkzP/6BtzwiTJEnyL25pc0fTR6zbB+wqX1a+rHyZnv9E01ec2wfsKl9Wvqx8WfmyeaDNPU0fsW4fsKt8Wfmy8mV6/vb3EbvmmaaPWLcP2FW+rHxZ+TI9/0jr9wZZ+bLyZeXLypfNNW1OtO0VZZIkSf7FK01fcW4fsKt8Wfmy8mV6/htt3mn6inP7gF3ly8qXlS/T8w+0eaTpK87tA3aVLytfVr6sfNkfgqd1Nv4QSGcAAAAASUVORK5CYII=");
+  background-size: 100%;
+  color: white;
+}
+  h1{
+    text-align: center;
+    margin-top: 250px;
+    font-size: 75;
+  }
+  h2{
+    text-align: center;
+  }
+  #next-btn{
+    height: 80px;
+    width: 200px;
+    bottom: 100% * 100px;
+    right: calc(50% - 75px);
+    font-family: Courier;
+    color: white;
+    background-color: lightpink;
+    border: 0px;
+    position: absolute;
+    border: 2px solid white;
+  }
+
+  #next-btn:hover{
+    background-color: lightblue;
+    color: white;
+    border: 2px solid white;
+  }
+
+  #cat {
+width: 726px;
+height: 122px;
+margin: 5% auto;
+background: url("http://i.imgur.com/mKMnTMz.png") left center;
+animation: play 3s steps(200) infinite;
+}
+@keyframes play {
+100% { background-position: 1452px; }
+}

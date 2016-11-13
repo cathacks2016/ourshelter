@@ -1,0 +1,62 @@
+body{
+  font-family: Courier;
+}
+  #nut-btn{
+    /*display: block;*/
+    font-family:Courier;
+    width:500px;
+    height: 30px;
+    background: lightblue;
+    font-size: 20px;
+    color: #fff;
+    line-height:20px;
+    text-align:center;
+    text-decoration:none;
+  }
+  #defaultcanvas0{
+    width=100%;
+    height=100%;
+    position: relative;
+  }
+  #nut-btn:hover{
+    color:#ccc;
+    text-decoration:none;
+    background:blue;
+  }
+  #wut-btn{
+    /*display: block;*/
+    font-family:Courier;
+    width:500px;
+    height: 30px;
+    background: lightpink;
+    font-size: 20px;
+    color: #fff;
+    line-height:20px;
+    text-align:center;
+    text-decoration:none;
+  }
+  #wut-btn:hover{
+    color:#ccc;
+    text-decoration:none;
+    background:red;
+  }
+  #but-btn{
+    /*display: block;*/
+    font-family:Courier;
+    width:500px;
+    height: 30px;
+    background: lightgreen;
+    font-size: 20px;
+    color: #fff;
+    line-height:20px;
+    text-align:center;
+    text-decoration:none;
+  }
+  #but-btn:hover{
+    color:#ccc;
+    text-decoration:none;
+    background:green;
+  }
+  #counter{
+    
+  }
