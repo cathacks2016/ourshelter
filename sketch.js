@@ -168,7 +168,6 @@ function setup() {
                 && mouseX >= this.x + xcorrection * kittylist[kitty].width - 50
                 && mouseY <= this.y + ycorrection * kittylist[kitty].height + 80
                 && mouseY >= this.y + ycorrection * kittylist[kitty].height- 80) {
-                cursor(HAND);
                 if (this.mouseflag <= 50) {
                     this.x -= this.speed;
                     for (var i = 0; i<100; i++) {
@@ -182,7 +181,6 @@ function setup() {
             }
             else {
                 this.mouseflag = 0;
-                cursor(ARROW);
             }
 
         };
