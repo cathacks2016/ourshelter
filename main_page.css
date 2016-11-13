@@ -4,7 +4,7 @@ body{
   #nut-btn{
     /*display: block;*/
     font-family:Courier;
-    width:500px;
+    width: 30%;
     height: 30px;
     background: lightblue;
     font-size: 20px;
@@ -26,7 +26,7 @@ body{
   #wut-btn{
     /*display: block;*/
     font-family:Courier;
-    width:500px;
+    width: 30%;
     height: 30px;
     background: lightpink;
     font-size: 20px;
@@ -43,7 +43,7 @@ body{
   #but-btn{
     /*display: block;*/
     font-family:Courier;
-    width:500px;
+    width: 30%;
     height: 30px;
     background: lightgreen;
     font-size: 20px;
